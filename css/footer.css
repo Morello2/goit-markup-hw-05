@@ -37,8 +37,6 @@
   flex-direction: column;
   margin-left: auto;
   gap: 16px;
-  margin-right: 15px;
-  margin-bottom: 32px;
 }
 .footer-form {
   display: flex;

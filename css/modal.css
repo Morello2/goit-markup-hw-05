@@ -73,7 +73,7 @@ textarea {
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
   padding: 8px 38px;
-  max-width: 360px;
+  width: 360px;
   min-height: 40px;
   margin-top: 4px;
   margin-bottom: 8px;
@@ -83,7 +83,7 @@ textarea {
 .model-line:focus {
   border-color: #4d5ae5;
 }
-.model-line:focus-within + .modal-icon {
+.model-line:focus + .modal-icon {
   color: #4d5ae5;
 }
 .modal-label textarea {
@@ -110,10 +110,12 @@ textarea {
   width: 16px;
   height: 16px;
 }
-
+.modal-cover {
+  position: relative;
+}
 .modal-icon {
   position: absolute;
-  top: 24px;
+  top: 10px;
   left: 19px;
   color: #2e2f42;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -128,7 +130,7 @@ textarea {
   letter-spacing: 0.04em;
   color: #8e8f99;
 }
-.model-btn {
+.modal-btn {
   border-radius: 4px;
   padding: 16px 32px;
   width: 169px;
@@ -154,9 +156,9 @@ textarea {
   padding: 2px;
   border-radius: 2px;
   color: #fff;
-  border-color: #404bbf;
   background-color: #404bbf;
 }
+
 .modal-close-btn:hover,
 .modal-close-btn:focus {
   background-color: #404bbf;
@@ -181,4 +183,5 @@ textarea {
   height: 16px;
   border-radius: 2px;
   border: 0.88px solid rgba(46, 47, 66, 0.4);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
