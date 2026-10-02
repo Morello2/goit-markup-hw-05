@@ -9,6 +9,9 @@
 .footer-bl1 {
   margin-right: 120px;
 }
+.footer-bl2 {
+  padding-right: 83px;
+}
 .footer-text {
   color: #f4f4fd;
   width: 264px;
@@ -26,6 +29,49 @@
   gap: 16px;
 }
 .footer-linkbtm:hover,
-.footer-linkbtm:focus {
+.footer-linkbtm:focus,
+.footer-btn:hover,
+.footer-btn:focus {
   background-color: #31d0aa;
+}
+.footer-bl3 {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding-right: 15px;
+  padding-bottom: 32px;
+}
+.footer-form {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+}
+
+.footer-label {
+  font-weight: 500;
+  color: #fff;
+}
+.footer-input {
+  background-color: inherit;
+  font-size: 12px;
+  line-height: 1.16667;
+  letter-spacing: 0.04em;
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 4px;
+  padding: 8px 16px;
+  width: 264px;
+  height: 40px;
+}
+.footer-input::placeholder {
+  color: #fff;
+}
+.footer-btn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 16px;
+  padding: 8px 24px;
+  width: 165px;
+  height: 40px;
 }
