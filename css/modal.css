@@ -10,10 +10,12 @@
   align-items: center;
   opacity: 0;
   pointer-events: none;
+  visibility: hidden;
 }
 .is-open {
   opacity: 1;
   pointer-events: auto;
+  visibility: visible;
 }
 .modal {
   position: relative;
@@ -75,10 +77,10 @@ textarea {
   min-height: 40px;
   margin-top: 4px;
   margin-bottom: 8px;
+  outline: none;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.model-line:focus-within {
-  outline: none;
+.model-line:focus {
   border-color: #4d5ae5;
 }
 .model-line:focus-within + .modal-icon {
@@ -94,10 +96,12 @@ textarea {
   font-size: 12px;
   line-height: 1.16667;
   letter-spacing: 0.04em;
-  color: rgba(46, 47, 66, 0.4);
 }
 .modal-label textarea:focus {
   border-color: #4d5ae5;
+}
+.modal-label textarea::placeholder {
+  color: rgba(46, 47, 66, 0.4);
 }
 .modal-checkbox {
   position: absolute;
@@ -150,7 +154,7 @@ textarea {
   padding: 2px;
   border-radius: 2px;
   color: #fff;
-  border: 0.88px solid #404bbf;
+  border-color: #404bbf;
   background-color: #404bbf;
 }
 .modal-close-btn:hover,
@@ -176,5 +180,5 @@ textarea {
   width: 16px;
   height: 16px;
   border-radius: 2px;
-  border: 0.88px solid #404bbf;
+  border: 0.88px solid rgba(46, 47, 66, 0.4);
 }

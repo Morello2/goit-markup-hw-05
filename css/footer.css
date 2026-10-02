@@ -9,9 +9,7 @@
 .footer-bl1 {
   margin-right: 120px;
 }
-.footer-bl2 {
-  padding-right: 83px;
-}
+
 .footer-text {
   color: #f4f4fd;
   width: 264px;
@@ -37,10 +35,10 @@
 .footer-bl3 {
   display: flex;
   flex-direction: column;
-  justify-content: right;
+  margin-left: auto;
   gap: 16px;
-  padding-right: 15px;
-  padding-bottom: 32px;
+  margin-right: 15px;
+  margin-bottom: 32px;
 }
 .footer-form {
   display: flex;
