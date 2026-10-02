@@ -143,10 +143,12 @@ textarea {
 }
 .modal-icon-check {
   position: absolute;
+  top: auto;
+  left: auto;
   opacity: 0;
   transition:
     opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-checkbox:checked + .modal-icon-check {
   position: absolute;
@@ -161,7 +163,7 @@ textarea {
   color: #fff;
 }
 .pricecy-link {
-  line-height: 1.33333;
+  line-height: 1.16667;
   text-decoration: underline;
   text-decoration-skip-ink: none;
   color: #4d5ae5;
@@ -179,8 +181,11 @@ textarea {
   height: 16px;
   border-radius: 2px;
   border: 0.88px solid rgba(46, 47, 66, 0.4);
+  transition:
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-check-box:has(input:checked) {
-  background-color: #4d5ae5;
-  border-color: #4d5ae5;
+  background-color: #404bbf;
+  border-color: #404bbf;
 }
